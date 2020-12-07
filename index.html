@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PocaZói Arte</title>
-    <meta name="description" content="Venha fazer sua arte com PocaZói, esse irreverente Punk Rock!">
+    <meta
+      name="description"
+      content="Venha fazer sua arte com PocaZói, esse irreverente Punk Rock!"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" async></script> 
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" async></script>
+  </head>
 
-<body>
-    <header id="header">
-        <div class="headerflex">
-            <div class="logo">
-            <img id="header-img" src="images/pocazoipelourinho.PNG" alt="PocaZoi Logo">
-            
-            </div>
-            <h2 class="pocazoi">PocaZói Arte</h2>       
-            <div class="empty"></div>
-
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#quemsomos">Quem somos</a></li>
-                    <li><a class="nav-link" href="#comofunc">Como Funciona</a></li>
-                    <li><a class="nav-link" href="#precos">Investimento</a></li>
-                </ul>
-        </nav>
+  <body class="grid-container">
+    <header id="header" class="nav">
+      <div class="headerflex">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="images/pocazoipelourinho.PNG"
+            alt="PocaZoi Logo"
+          />
         </div>
+        <h2 class="pocazoi">PocaZói Arte</h2>
+        <div class="empty"></div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#aleluia">Quem somos</a></li>
+            <li><a class="nav-link" href="#comofunc">Como Funciona</a></li>
+            <li><a class="nav-link" href="#precos">Investimento</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-<div class="container"></div>
-    <article id="video">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/40FCb7mDDiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="side__left"></div>
+    <div class="side__right"></div>
+    <main>
+      <div class="main">
+        <div id="video">
+          <h2 id="aleluia">Aleluia</h2>
+          <iframe
+            id="youtube"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/40FCb7mDDiM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-    </article>
-    
-    <!-- <form id =form action="">
-        <Label for="email">E-mail</Label>
-        <input id="email" type="email" name="email" placeholder="Insira seu e-mail" required>
-        <input id="submit" type="Submit" value="Bora nessa!">
-    </form> -->
-
-
-
-
-
-
-</body>
+        <form id="form" action="mailto:https://www.freecodecamp.com/email-submit" method="post" enctype="text/plain">
+          <label for="email">Quero receber biscoito!</label><br/>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Insira seu e-mail"
+            required
+          />
+          <input id="submit" type="Submit" value="Bora nessa!" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+  </body>
 </html>

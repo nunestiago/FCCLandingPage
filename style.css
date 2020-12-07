@@ -1,15 +1,55 @@
 /* Base https://codepen.io/freeCodeCamp/pen/RKRbwL */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px solid black; */
 }
 
 .pocazoi {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1.3rem;
+  font-family: "Rock Salt", cursive;
+  font-size: 1.3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.2fr 1.6fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav  nav nav"
+    "side__left main  side__right"
+    "side__left main  side__right"
+    "side__left footer  side__right";
+}
+
+.nav {
+  grid-area: nav;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: rgba(244, 165, 96, 0.26);
+}
+
+.side__left {
+  grid-area: side__left;
+}
+
+.side__right {
+  grid-area: side__right;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.nav {
 }
 
 #header-img {
@@ -19,22 +59,12 @@
   margin-right: 10px;
 }
 
-header {
-  background-color: rgba(244, 165, 96, 0.26);
-}
-
-.empty{
-  flex-grow: 2;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
 .headerflex {
   display: flex;
+}
+
+.empty {
+  flex-grow: 2;
 }
 
 li {
@@ -80,9 +110,26 @@ nav > ul {
   }
 }
 
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+.side__left,
+.side__right {
+  background-color: black;
 }
 
+.main {
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+}
+
+#video {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  justify-items: center;
+  justify-self: center;
+}
